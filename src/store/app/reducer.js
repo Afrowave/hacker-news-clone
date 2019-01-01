@@ -1,4 +1,4 @@
- import { actionTypes } from './actions';
+import { actionTypes } from './actions';
 
 const getInitialState = () => ({
 	theme: 'dark',
@@ -9,7 +9,7 @@ const app = (state = getInitialState(), { type, payload }) => {
 		case actionTypes.SET_THEME:
 			return {
 				...state,
-				...payload, // { theme: <VLAUE> }
+				...payload, // { theme: <VALUE> }
 			};
 		default:
 			return state;
