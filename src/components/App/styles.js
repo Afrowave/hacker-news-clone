@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import { tablet } from 'styles/mediaQueries';
+import styled from "styled-components";
+import { tablet } from "styles/mediaQueries";
 
 export const Wrapper = styled.div`
 	width: 85%;
 	margin: 0 auto;
 	height: 100%;
 	overflow: hidden;
-	padding-bottom: 200%;
+	padding-bottom: 20%;
 
 	${tablet} {
 		width: 96%;

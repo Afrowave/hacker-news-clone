@@ -1,29 +1,21 @@
+This project is a blow-by-blow follow-through of the Hacker News Clone tutorial by @gitconnected.
+
+[React & Redux Tutorial - Build a Hacker News Clone](https://gitconnected.com/courses/learn-react-redux-tutorial-build-a-hacker-news-clone) is the tutorial page.
+
+This repo is also a small view into how fast the React ecosystem changes. The video for this project was initially published on the 8th of October 2018. I have had to make some changes to the code for everything to work. As you watch the video, I would encourage you to follow along on the writeup version of the tutorial. It is much easier to keep updated.
+
+This repo has no tests. It is purely for learning purposes. The [gitconnected/hacker-news-reader](https://github.com/gitconnected/hacker-news-reader) repo is more thorough and up to date on how one would build a Hacker News Reader with all the bells and whistles. This repo tries to follow the tutorial strictlyso that the learnings are clear.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Some of the changes made
 
-In the project directory, you can run:
+#### `createGlobalStyle`
 
-### `npm start`
+At the very beginning, to implement the web page theme, read on the new implementation [`createGlobalStyle`](https://www.styled-components.com/docs/api#createglobalstyle) implementation.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+However, I discovered that this is not such a straight-forward thing. Nothing in React is. 😄
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+#### `TimeAgo`
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+This is the replacement of the `timeago.js` used in the `ListItem` component. Read more about [react-timeago](https://www.npmjs.com/package/react-timeago).

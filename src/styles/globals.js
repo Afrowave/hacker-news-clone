@@ -1,18 +1,16 @@
-import { createGlobalStyle } from 'styled-components';
-import { colorsDark } from 'styles/palette';
+import { createGlobalStyle } from "styled-components";
+import { colorsDark } from "styles/palette";
 
 const GlobalStyles = createGlobalStyle`
-    * {
-      box-sizing: border-box;
-    }
-    html, body, {
-      font-family: Lato,Helvetica-Neue,Helvetica,Arial,sans-serif;
+    
+    html, body {
+      font-family: Lato, Helvetica-Neue, Helvetica, Arial, sans-serif;
       width: 100vw;
       overflow-x: hidden;
       margin: 0;
       padding: 0;
       min-height: 100vh
-      backgoround-color: ${colorsDark.background};
+      background-color: ${colorsDark.background};
     }
     ul {
       list-style: none;
